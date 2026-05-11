@@ -200,8 +200,24 @@
             font-size: 14px;
             color: #866a5c;
         }
-
         @media (max-width: 768px) {
+    .hero {
+        flex-direction: column;  /* текст сверху, фото снизу */
+    }
+    
+    .hero-image {
+        width: 100%;             /* фото на всю ширину */
+        height: auto;           /* высота сама подстроится */
+        min-height: 300px;      /* минимальная высота, чтобы не было слишком мелко */
+    }
+    
+    .hero-img {
+        width: 100%;
+        height: auto;           /* фото сохраняет пропорции */
+        object-fit: cover;      /* заполняет блок, обрезая края */
+        min-height: 300px;      /* чтобы фото не сжималось */
+    }
+        }{
             .hero-text h1 {
                 font-size: 36px;
             }
