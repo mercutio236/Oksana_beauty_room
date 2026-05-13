@@ -270,6 +270,94 @@
     border-radius: 40px; /* скругляем углы самого фото */
         }
         /* ===== КОНЕЦ КОДА АНИМАЦИИ ===== */
+        /* Блок акций */
+.promo-section {
+    margin: 30px 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.promo-card {
+    background: linear-gradient(135deg, #fff6f2 0%, #ffe8df 100%);
+    border-radius: 28px;
+    padding: 20px 25px;
+    text-align: center;
+    flex: 1;
+    min-width: 180px;
+    border: 1px solid #ffe1d4;
+    transition: transform 0.2s;
+}
+
+.promo-card:hover {
+    transform: translateY(-3px);
+}
+
+.promo-card-light {
+    background: linear-gradient(135deg, #fff 0%, #fef9f7 100%);
+}
+
+.promo-badge {
+    display: inline-block;
+    background-color: #b85c38;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.promo-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c1a14;
+    margin-bottom: 6px;
+}
+
+.promo-days {
+    font-size: 14px;
+    color: #b85c38;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.promo-discount {
+    font-size: 26px;
+    font-weight: 800;
+    color: #b85c38;
+}
+
+.promo-desc {
+    font-size: 14px;
+    color: #5a423a;
+    margin-top: 8px;
+}
+
+.promo-note {
+    background-color: #2c1a14;
+    color: #fff3ef;
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 50px;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .promo-card {
+        min-width: 100%;
+    }
+    .promo-title {
+        font-size: 18px;
+    }
+    .promo-discount {
+        font-size: 22px;
+    }
+        }
     </style>
 </head>
 <body>
@@ -291,6 +379,25 @@
         </div>
         <div class="hero-caption">Оксана — мастер маникюра</div>
     </div>
+        <!-- Блок акций -->
+<div class="promo-section">
+    <div class="promo-card">
+        <div class="promo-badge"> АКЦИЯ</div>
+        <div class="promo-title">Счастливые часы</div>
+        <div class="promo-days">Пн-ср 10:00–12:00</div>
+        <div class="promo-discount">−10% на все услуги</div>
+    </div>
+    
+    <div class="promo-card promo-card-light">
+        <div class="promo-badge"> ПРИВЕДИ ПОДРУГУ</div>
+        <div class="promo-title">−10% после её визита</div>
+        <div class="promo-desc">Акция действует до конца июля</div>
+    </div>
+    
+    <div class="promo-note">
+        📅 <strong>Запись на июнь открыта!</strong> Количество мест ограничено
+    </div>
+        </div>
     </section>
 </div>
 
